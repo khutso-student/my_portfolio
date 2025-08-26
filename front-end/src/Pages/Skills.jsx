@@ -26,7 +26,7 @@ const TechCard = ({ icon: Icon, title, description }) => {
 
 export default function Skills() {
     return(
-        <div className="flex justify-center items-center w-full h-auto lg:h-screen bg-[#fff] rounded-bl-[100px] md:rounded-bl-[300px] py-5 px-2 mb-5">
+        <div className="flex justify-center items-center w-full h-auto lg:h-screen bg-[#fff] rounded-bl-[100px] md:rounded-bl-[300px] py-8 px-2 mb-5">
            <div className="flex flex-col     w-full sm:w-[1000px] h-auto p-2">
                 <h1 className="text-4xl text-[#535353]  flex justify-center sm:justify-start">
                     <span className="font-bold">MY</span> SKILLS
@@ -82,7 +82,7 @@ export default function Skills() {
                         <TechCard
                         icon={BiLogoTypescript}
                         title="TypeScript"
-                        description="Building interactive front-end logic.."
+                        description="Building interactive front-end logic."
                         />
 
                         <TechCard

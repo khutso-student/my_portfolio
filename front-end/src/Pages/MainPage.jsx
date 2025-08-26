@@ -74,16 +74,17 @@ export default function MainPage() {
       <div id="skills" className="w-full h-auto lg:h-screen bg-[#1A1A1A] ">
         <Skills />
       </div>
+      <div id="projects" className="w-full h-auto lg:h-screen bg-[#1A1A1A]">
+        <Projects />
+      </div>
+
     <div
       className="w-full h-auto bg-cover bg-center bg-no-repeat "
       style={{ backgroundImage: `url(${Tech})` }}>
         <WorkCarousel />
     </div>
 
-      <div id="projects" className="w-full h-auto lg:h-full bg-[#1A1A1A]">
-        <Projects />
-      </div>
-      <div id="contact" className="w-full h-auto lg:h-full bg-[#1A1A1A]">
+      <div id="contact" className="w-full h-auto lg:h- bg-[#1A1A1A]">
         <Contact />
       </div>
     </main>

@@ -7,7 +7,7 @@ const works = [
       "I can build secure authentication systems using JWT, bcrypt, and session management. This includes login, signup, password resets, and role-based access.",
   },
   {
-    title: "RESTful APIs",
+    title: "REST-Full APIs",
     description:
       "I can design and develop scalable REST APIs with Express.js and Node.js, enabling seamless communication between frontend and backend.",
   },
