@@ -1,6 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { VscLocation } from "react-icons/vsc";
 import { MdOutlineMail, MdOutlineLocalPhone } from "react-icons/md";
 
@@ -23,7 +24,6 @@ export default function Contact() {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // ENV Keys
   const isProd = import.meta.env.PROD;
   const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -51,7 +51,6 @@ export default function Contact() {
       return;
     }
 
-    // Payload
     const payload = {
       from_name: formData.user_name,
       from_email: formData.user_email,
@@ -82,8 +81,8 @@ export default function Contact() {
 
   return (
     <main className="flex justify-center items-center w-full h-auto lg:h-screen px-2 py-5">
+      <ToastContainer position="top-right" autoClose={3000} />
       <div className="flex flex-col sm:flex-row justify-center items-center gap-6 w-full sm:w-[1000px] h-auto p-2">
-        
         {/* Form */}
         <div className="flex flex-col order-1 sm:order-0 bg-[#222222] text-white w-full sm:w-70 h-90 rounded-lg p-3">
           <p>Lets Communicate</p>
