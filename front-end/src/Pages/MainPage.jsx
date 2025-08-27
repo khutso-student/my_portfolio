@@ -6,6 +6,7 @@ import Skills from '../Pages/Skills';
 import Projects from '../Pages/Projects';
 import Contact from '../Pages/Contact';
 import WorkCarousel from '../component/WorkCarousel';
+import Marquee from '../component/Marquee';
 
 import BUT from '../assets/BUT.svg';
 import LOGO from '../assets/LOGO.png';
@@ -71,6 +72,11 @@ export default function MainPage() {
       <div id="about" className="w-full h-auto lg:h-screen">
         <About />
       </div>
+
+      <div className='w-full'>
+          <Marquee />
+      </div>
+
       <div id="skills" className="w-full h-auto lg:h-screen bg-[#1A1A1A] ">
         <Skills />
       </div>
@@ -86,6 +92,12 @@ export default function MainPage() {
 
       <div id="contact" className="w-full h-auto lg:h- bg-[#1A1A1A]">
         <Contact />
+      </div>
+
+      <div className="bg-[#252525] w-full h-20 text-[#5D5A5A] "> 
+            <footer className="w-full text-center py-4 font-light text-[#ffffff91] text-sm">
+             © {new Date().getFullYear()} K.Makunyane. All Rights Reserved.
+          </footer>
       </div>
     </main>
   );
