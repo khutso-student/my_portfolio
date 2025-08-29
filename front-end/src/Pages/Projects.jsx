@@ -59,7 +59,7 @@ export default function Projects() {
             <div className="flex flex-col w-full max-w-4xl  p-2 h-auto">
                 {/* Heading */}
                  <h1 className="text-4xl text-[#fff]  flex justify-center sm:justify-start">
-                    <span className="font-bold">MY</span> SKILLS
+                    <span className="font-bold">MY</span> PROJECTS
                 </h1>
                   <h2 className="text-[#fff] text-md sm:text-lg mb-2 flex justify-center sm:justify-start">
                     What I have done already
