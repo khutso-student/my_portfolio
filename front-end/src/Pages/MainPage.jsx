@@ -16,7 +16,7 @@ export default function MainPage() {
   const [sideOpen, setSideOpen] = useState(false);
 
   return (
-    <main className="flex flex-col w-full h-screen">
+    <main className="flex flex-col w-full h-auto">
       {/* Toggle button */}
       <button
         onClick={() => setSideOpen(prev => !prev)}
@@ -80,7 +80,7 @@ export default function MainPage() {
       <div id="skills" className="w-full h-auto lg:h-screen bg-[#1A1A1A] ">
         <Skills />
       </div>
-      <div id="projects" className="w-full h-auto lg:h-screen bg-[#1A1A1A]">
+      <div id="projects" className="w-full h-auto  bg-[#1A1A1A]">
         <Projects />
       </div>
 
