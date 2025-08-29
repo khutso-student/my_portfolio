@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { motion, useMotionValue, useTransform } from 'framer-motion';
+
+
+
 import StandardBank from "../assets/StandardBank.png";
 import TymBank from "../assets/TymBank App.png";
 import Hotel from '../assets/Hotel.png';
@@ -67,7 +71,12 @@ export default function Design() {
   const [viewAll, setViewAll] = useState(false);
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full">
+    <motion.div 
+    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 w-full"
+     initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, ease: 'easeOut' }}>
       {/* Initial Grid */}
       <DesignCard image={StandardBank} title="Standard Bank" subtitle="UX Redesign" />
       <DesignCard image={TymBank} title="TymBank" subtitle="UX Redesign" />
@@ -115,6 +124,6 @@ export default function Design() {
           </div>
         </div>
       )}
-    </div>
+    </motion.div>
   );
 }

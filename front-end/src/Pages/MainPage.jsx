@@ -32,7 +32,7 @@ export default function MainPage() {
       <div
         className={` fixed left-5 top-1/2 transform -translate-y-1/2 
         bg-[#1a1a1af5] border border-white rounded-full z-40 
-        overflow-hidden transition-all duration-500 ease-in-out h-150 flex flex-col justify-between items-center p-2
+        overflow-hidden transition-all duration-500 ease-in-out h-130 sm:h-150 flex flex-col justify-between items-center p-2
         ${sideOpen ? 'w-30  opacity-100' : 'w-0  opacity-0'}`}
       >
         <img src={LOGO} alt="" className='w-12 mt-5 animate-bounce' />

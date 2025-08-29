@@ -3,6 +3,7 @@ import { motion, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 
+
 import { BiShapeSquare } from "react-icons/bi";
 
 
@@ -33,6 +34,9 @@ export default function Home() {
 
             <motion.div className='flex justify-center items-center w-70 sm:w-90 h-auto mb-2'
                               ref={ref}
+                                                    initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 2 }}
+                      transition={{ delay: 0.6 }}
                 
                   onMouseEnter={handleMouseEnter}
                   onMouseLeave={handleMouseLeave}

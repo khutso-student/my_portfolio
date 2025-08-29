@@ -11,6 +11,8 @@ import { SiMysql } from "react-icons/si";
 import { LiaWordpressSimple } from "react-icons/lia";
 
 import React from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+
 
 const TechCard = ({ icon: Icon, title, description }) => {
   return (
@@ -35,7 +37,10 @@ export default function Skills() {
                     What I can do
                 </h2>
 
-                <div className="w-full  h-full p-1">
+                <motion.div className="w-full  h-full p-1"
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.6 }}>
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3">
                         <TechCard
                         icon={BiLogoMongodb}
@@ -105,7 +110,7 @@ export default function Skills() {
 
           
                     </div>
-                </div>
+                </motion.div>
            </div>
         </div>
     )
