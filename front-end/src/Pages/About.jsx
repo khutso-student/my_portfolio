@@ -1,11 +1,16 @@
+import React, { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 import AboutBG from "../assets/AboutBG.png";
 import { MdDownloading } from "react-icons/md";
+import { MdOutlineDownloading } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
+
+import MERN from '../assets/MERN Cv.pdf';
+import UI from '../assets/UI Cv.pdf';
 
 const Details = ({ dot, label, value }) => {
   return (
@@ -23,6 +28,7 @@ const Details = ({ dot, label, value }) => {
 
 export default function About() {
   const containerRef = useRef(null);
+  const [model, setModel] = useState(false)
 
   // motion values
   const x = useMotionValue(0.5);
@@ -50,7 +56,7 @@ export default function About() {
   };
 
   return (
-    <div className="flex justify-center items-center w-full h-auto lg:h-screen py-8 px-1 mb-3">
+    <main className="flex justify-center items-center w-full h-auto lg:h-screen py-8 px-1 mb-3">
       <div className="flex flex-col sm:flex-row justify-center  gap-2  w-full sm:w-[1000px] h-auto p-2">
         {/* left */}
         <div className="flex flex-col w-full sm:w-120 h-auto sm:h-full ">
@@ -110,7 +116,8 @@ export default function About() {
           </motion.div>
           
           <div className="flex items-center w-full gap-2 justify-center sm:justify-start mt-3 sm:mt-1">
-            <button className="flex justify-center items-center gap-2 bg-[#074643] hover:bg-[#BDBDBD] text-white hover:text-[#1A1A1A] cursor-pointer text-sm px-2.5 py-2 rounded-md duration-300">
+            <button onClick={() => setModel(!model)}
+            className="flex justify-center items-center gap-2 bg-[#074643] hover:bg-[#BDBDBD] text-white hover:text-[#1A1A1A] cursor-pointer text-sm px-2.5 py-2 rounded-md duration-300">
                 <MdDownloading />
                 Download Cv
             </button>
@@ -152,6 +159,51 @@ export default function About() {
             </div>
         </div>
       </div>
-    </div>
+
+       {model && (
+                <motion.div
+                    onClick={() => setModel(false)}
+                    className="fixed top-0 left-0 w-full h-full bg-[#00000085] flex justify-center items-center z-50"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+   
+                    >
+                    <div
+                    onClick={(e) => e.stopPropagation()}
+                    className="flex flex-col justify-center items-center gap-3 bg-[#032220] w-80 p-5 rounded-md border-2 border-[#074643] shadow-lg"
+                       initial={{ scale: 0.9, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        exit={{ scale: 0.9, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                   >
+                    <p className="text-gray-300 text-sm mb-3">Choose CV to download</p>
+
+                    <div className="flex justify-center items-center gap-3 w-full">
+                        {/* MERN CV */}
+                        <a
+                        href={MERN}
+                        download="Khutso_MERN_CV.pdf"
+                        className="flex items-center gap-2 bg-[#074643] hover:bg-[#fff] text-gray-100 hover:text-black text-sm px-6 py-2 rounded-md duration-300"
+                        >
+                        <MdOutlineDownloading size={18} />
+                        Dev CV
+                        </a>
+
+                        {/* UI/UX CV */}
+                        <a
+                        href={UI}
+                        download="Khutso_UI_CV.pdf"
+                        className="flex items-center gap-2 bg-[#074643] hover:bg-[#fff] text-gray-100 hover:text-black text-sm px-4 py-2 rounded-md duration-300"
+                        >
+                        <MdOutlineDownloading size={18} />
+                        UI/UX CV
+                        </a>
+                    </div>
+                    </div>
+                </motion.div>
+                )}
+    </main>
   );
 }
