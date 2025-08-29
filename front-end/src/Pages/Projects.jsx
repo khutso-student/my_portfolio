@@ -62,7 +62,7 @@ export default function Projects() {
                     <span className="font-bold">MY</span> SKILLS
                 </h1>
                   <h2 className="text-[#fff] text-md sm:text-lg mb-2 flex justify-center sm:justify-start">
-                    What I can do
+                    What I have done already
                 </h2>
 
                 {/* Tabs */}
