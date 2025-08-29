@@ -94,7 +94,7 @@ export default function MainPage() {
         <Contact />
       </div>
 
-      <div className="bg-[#252525] w-full h-20 text-[#5D5A5A] "> 
+      <div className="flex justify-center items-center bg-[#252525] w-full h-15 text-[#5D5A5A] "> 
             <footer className="w-full text-center py-4 font-light text-[#ffffff91] text-sm">
              © {new Date().getFullYear()} K.Makunyane. All Rights Reserved.
           </footer>

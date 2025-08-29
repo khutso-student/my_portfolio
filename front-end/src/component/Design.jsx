@@ -12,6 +12,8 @@ import TruckDebo from '../assets/TruckDEBO.png'
 import Queue from '../assets/QueueCare.png';
 import Adidas from '../assets/Adidas.png';
 import Meetify from '../assets/Meetify.png';
+import Jays from '../assets/Jays.png';
+
 import { HiOutlineViewfinderCircle } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
 
@@ -116,6 +118,8 @@ export default function Design() {
               <DesignCard image={Queue} title="QueueCare" subtitle="Software Design" />
               <DesignCard image={Adidas} title="Adidas Product" subtitle="Product Design" />
               <DesignCard image={Meetify} title="Meetify" subtitle="Software" />
+              <DesignCard image={Jays} title="Jays Electronics" subtitle="Ecommerce" />
+
             </div>
           </div>
           <div onClick={() => setViewAll(false)}
