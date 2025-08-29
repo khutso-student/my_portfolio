@@ -69,13 +69,13 @@ export default function Skills() {
                         <TechCard
                         icon={AiOutlineHtml5}
                         title="HTML"
-                        description="Craft semantic and Style responsive using Html & Css."
+                        description="Craft semantic and web stucture using Html ."
                         />
 
                         <TechCard
                         icon={RiCss3Line}
                         title="CSS"
-                        description="Craft semantic and Style responsive using Html & Css."
+                        description="Craft semantic and Style responsive using  Css and tailwing."
                         />
 
                         <TechCard
