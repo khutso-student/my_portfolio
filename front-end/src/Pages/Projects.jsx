@@ -105,7 +105,7 @@ export default function Projects() {
                         <ProjectCard
                             image={QueFiling}
                             title="QueueCare Filing"
-                            demoLink="https://queue-care-swart.vercel.app/"
+                            demoLink="https://queue-care-filing.vercel.app/"
                             githubLink="https://github.com/khutso-student?tab=repositories"
                             category="Software"
                             index="02"
