@@ -9,8 +9,7 @@ import { MdOutlineDownloading } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
-import MERN from '../assets/MERN Cv.pdf';
-import UI from '../assets/UI Cv.pdf';
+import Resume from '../assets/Resume.pdf';
 
 const Details = ({ dot, label, value }) => {
   return (
@@ -178,27 +177,17 @@ export default function About() {
                         exit={{ scale: 0.9, opacity: 0 }}
                         transition={{ duration: 0.3 }}
                    >
-                    <p className="text-gray-300 text-sm mb-3">Choose CV to download</p>
+                    <p className="text-gray-300 text-sm mb-3">Download Cv</p>
 
                     <div className="flex justify-center items-center gap-3 w-full">
                         {/* MERN CV */}
                         <a
-                        href={MERN}
-                        download="Khutso_MERN_CV.pdf"
+                        href={Resume}
+                        download="Khutso_Resume.pdf"
                         className="flex items-center gap-2 bg-[#074643] hover:bg-[#fff] text-gray-100 hover:text-black text-sm px-6 py-2 rounded-md duration-300"
                         >
                         <MdOutlineDownloading size={18} />
-                        Dev CV
-                        </a>
-
-                        {/* UI/UX CV */}
-                        <a
-                        href={UI}
-                        download="Khutso_UI_CV.pdf"
-                        className="flex items-center gap-2 bg-[#074643] hover:bg-[#fff] text-gray-100 hover:text-black text-sm px-4 py-2 rounded-md duration-300"
-                        >
-                        <MdOutlineDownloading size={18} />
-                        UI/UX CV
+                        Resume
                         </a>
                     </div>
                     </div>
