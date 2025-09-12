@@ -11,6 +11,11 @@ const works = [
     description:
       "I can design and develop scalable REST APIs with Express.js and Node.js, enabling seamless communication between frontend and backend.",
   },
+    {
+    title: "Socket IO",
+    description:
+      "I can build real time communication between clients and servers. This including live updates and chat applications",
+  },
   {
     title: "Database Management",
     description:
@@ -24,7 +29,12 @@ const works = [
   {
     title: "Deployment",
     description:
-      "I can deploy full-stack MERN apps to cloud platforms like Vercel, Render, MonngoDb Clusters and, ensuring CI/CD and scalability.",
+      "I can deploy full-stack MERN apps to cloud platforms like Vercel, Render, MongoDB Clusters and, ensuring CI/CD and scalability.",
+  },
+    {
+    title: "UX/UI Designer",
+    description:
+      "Passionate about user research and testing, wireframing and prototyping, visual design and usability, design systems and accessibility",
   },
 ];
 

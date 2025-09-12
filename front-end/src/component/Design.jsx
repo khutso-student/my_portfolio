@@ -13,6 +13,7 @@ import Queue from '../assets/QueueCare.png';
 import Adidas from '../assets/Adidas.png';
 import Meetify from '../assets/Meetify.png';
 import Jays from '../assets/Jays.png';
+import VibeConnect from '../assets/VibeConnect.png';
 
 import { HiOutlineViewfinderCircle } from "react-icons/hi2";
 import { TfiClose } from "react-icons/tfi";
@@ -119,6 +120,8 @@ export default function Design() {
               <DesignCard image={Adidas} title="Adidas Product" subtitle="Product Design" />
               <DesignCard image={Meetify} title="Meetify" subtitle="Software" />
               <DesignCard image={Jays} title="Jays Electronics" subtitle="Ecommerce" />
+              <DesignCard image={VibeConnect} title="VibeConnect" subtitle="Software Design" />
+
 
             </div>
           </div>

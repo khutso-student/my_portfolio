@@ -150,7 +150,7 @@ export default function About() {
             </motion.p>
             ))}
 
-            <div className="flex items-center gap-2.5 w-full mt-2">
+            <div className="flex items-center text-xl gap-2.5 w-full mt-2">
                 <a href="https://github.com/khutso-student" target="_blank"><FaGithub className='text-[#074643] hover:text-[#1A1A1A]' /></a>
                 <a href="https://www.linkedin.com/in/khutso-makunyane-5353b1329/" target="_blank"><FaLinkedinIn className='text-[#074643] hover:text-[#1A1A1A]' /></a>
                 <a href="https://www.facebook.com/khutso.makunyane.2025/" target="_blank"><FaFacebookF className='text-[#074643] hover:text-[#1A1A1A]' /></a>

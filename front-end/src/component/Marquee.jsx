@@ -31,6 +31,10 @@ export default function Marquee() {
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">Back-End Developer</span>
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">•</span>
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">Database Design</span>
+        <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">•</span>
+        <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">UX/UI Designer</span>
+        <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">•</span>
+
 
         {/* Duplicate for seamless effect */}
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">Full Stack Developer</span>
@@ -40,6 +44,10 @@ export default function Marquee() {
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">Back-End Developer</span>
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">•</span>
         <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">Database Design</span>
+        <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">•</span>
+        <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">UX/UI Designer</span>
+        <span className="text-lg sm:text-2xl font-bold text-[#9A9999] mx-8">•</span>
+
       </div>
     </div>
   );

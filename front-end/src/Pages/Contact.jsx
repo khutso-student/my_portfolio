@@ -147,7 +147,7 @@ export default function Contact() {
           <h1 className="text-4xl flex justify-center sm:justify-start">
             CONTACT <span className="font-bold ml-1">ME</span>
           </h1>
-          <h2 className="text-md sm:text-lg mb-4 flex justify-center sm:justify-start">What I can do</h2>
+          <h2 className="text-md sm:text-lg mb-4 flex justify-center sm:justify-start">Get in touch with me</h2>
           <p className="mb-4">
             I’m currently open to full-time opportunities, freelance work, or developer roles where I can contribute and grow.
           </p>
