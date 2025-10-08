@@ -44,10 +44,10 @@ export default function Home() {
                 <img src={PROFILE} alt="" className='w-90' />
             </motion.div>
 
-            <h1 className='text-white text-5xl sm:text-7xl font-bold'>
-                SOFT
+            <h1 className='text-white text-2xl sm:text-5xl font-bold mb-2'>
+                SOFTWARE <span></span>
                 <span className='font-light'>
-                    WARE
+                    DEVELOPER
                 </span>
             </h1>
             <h1 className='text-white  text-xl sm:text-2xl mb-1'>

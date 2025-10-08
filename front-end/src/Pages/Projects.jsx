@@ -7,8 +7,8 @@ import worksync from '../assets/worksync.png';
 import Que from '../assets/Que.png';
 import QueFiling from '../assets/QueFiling.png';
 import WisePrice from '../assets/WisePrice.png';
-import LiveQueue from '../assets/LiveQueue.png';
 import SmartBiz from '../assets/SmartBiz.png';
+import Vibe from '../assets/Vibe.png';
 
 const ProjectCard = ({ image, title, demoLink, githubLink, category, index }) => {
     return (
@@ -112,26 +112,27 @@ export default function Projects() {
                         />
 
                         <ProjectCard
+                            image={Vibe}
+                            title="VibeConnect"
+                            demoLink="https://vibeconnect-seven.vercel.app/"
+                            githubLink="https://github.com/khutso-student?tab=repositories"
+                            category="Software"
+                            index="03"
+                        />
+
+                        <ProjectCard
                             image={worksync}
                             title="WorkSync"
                             demoLink="https://work-sync-nine.vercel.app/"
                             githubLink="https://github.com/khutso-student?tab=repositories"
                             category="Software"
-                            index="03"
+                            index="04"
                         />
 
                          <ProjectCard
                             image={WisePrice}
                             title="Wise ShopKeeper"
                             demoLink="https://price-wise-shopkeeper.vercel.app/"
-                            githubLink="https://github.com/khutso-student?tab=repositories"
-                            category="Software"
-                            index="04"
-                        />
-                         <ProjectCard
-                            image={LiveQueue}
-                            title="Live Queue"
-                            demoLink="https://clinic-queue-hero.vercel.app/"
                             githubLink="https://github.com/khutso-student?tab=repositories"
                             category="Software"
                             index="05"
