@@ -11,7 +11,8 @@ import WisePrice from "../assets/WisePrice.png";
 import SmartBiz from "../assets/SmartBiz.png";
 import Vibe from "../assets/Vibe.png";
 
-const ProjectCard = ({ image, title, demoLink, githubLink, category, index }) => {
+// ✅ Project Card Component (No TypeScript)
+const ProjectCard = ({ image, title, demoLink, githubLink, category, index, tools = [] }) => {
   return (
     <motion.div
       className="w-full"
@@ -21,7 +22,7 @@ const ProjectCard = ({ image, title, demoLink, githubLink, category, index }) =>
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="flex flex-col bg-[#121212] border border-[#2d2d2d] rounded-xl overflow-hidden hover:shadow-lg hover:shadow-[#0a473f]/40 hover:border-[#0a473f] transition-all duration-300">
-        {/* Image */}
+        {/* Image Section */}
         <div
           className="w-full h-40 sm:h-48 md:h-56 bg-cover bg-center relative group"
           style={{ backgroundImage: `url(${image})` }}
@@ -50,25 +51,41 @@ const ProjectCard = ({ image, title, demoLink, githubLink, category, index }) =>
           </div>
         </div>
 
-        {/* Content */}
+        {/* Content Section */}
         <div className="flex flex-col px-4 py-3">
           <div className="flex justify-between items-center mb-1">
             <h2 className="text-white font-semibold text-base">{title}</h2>
             <span className="text-[#0a473f] text-xs font-bold">{index}</span>
           </div>
+
           <p className="text-[#bbbbbb] text-sm mb-2">{category}</p>
+
+          {/* Tools / Tech Stack */}
+          {tools.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-1">
+              {tools.map((tool, i) => (
+                <span
+                  key={i}
+                  className="px-2 py-1 text-xs rounded-md bg-[#0a473f]/15 text-[#00ffcc] border border-[#0a473f]/40"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
   );
 };
 
+// ✅ Main Projects Component
 export default function Projects() {
   const [activeTab, setActiveTab] = useState("projects");
 
   return (
     <div className="flex justify-center items-center w-full pt-20 pb-10 px-3">
-      <div className="flex flex-col w-full max-w-5xl">
+      <div className="flex flex-col w-full max-w-6xl">
         {/* Heading */}
         <h1 className="text-4xl text-white font-bold mb-1 text-center sm:text-left">
           MY <span className="text-[#0a473f]">PROJECTS</span>
@@ -101,16 +118,22 @@ export default function Projects() {
           </button>
         </div>
 
-        {/* Content */}
+        {/* Content Section */}
         <div className="w-full">
           {activeTab === "projects" && (
-            <motion.div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <motion.div
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.6 }}
+            >
               <ProjectCard
                 image={Que}
                 title="QueueCare"
                 demoLink="https://queue-care-swart.vercel.app/"
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
+                tools={["React","JavaScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB"]}
                 index="01"
               />
               <ProjectCard
@@ -119,6 +142,7 @@ export default function Projects() {
                 demoLink="https://queue-care-filing.vercel.app/"
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
+                tools={["React", "JavaScript", "Tailwind CSS", "Node.js","Express.js", "MongoDB"]}
                 index="02"
               />
               <ProjectCard
@@ -127,6 +151,7 @@ export default function Projects() {
                 demoLink="https://vibeconnect-seven.vercel.app/"
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
+                tools={["React","JavaScript","Tailwing CSS", "Socket.io", "Express","Nodde.js", "MongoDB"]}
                 index="03"
               />
               <ProjectCard
@@ -135,6 +160,7 @@ export default function Projects() {
                 demoLink="https://work-sync-nine.vercel.app/"
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
+                tools={["React","JavaScript", "Express.js", "Socket.io", "Node.js", "Tailwind CSS", "MongoDB"]}
                 index="04"
               />
               <ProjectCard
@@ -143,6 +169,7 @@ export default function Projects() {
                 demoLink="https://price-wise-shopkeeper.vercel.app/"
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
+                tools={["React","TypeScript", "Supabase", "AI APIs","HTML", "CSS"]}
                 index="05"
               />
               <ProjectCard
@@ -150,6 +177,7 @@ export default function Projects() {
                 title="SmartBiz Digital"
                 demoLink="https://www.smartbizdigital.co.za/"
                 category="Website Live"
+                tools={["WordPress", "JavaScript", "Elementor","HTML", "CSS"]}
                 index="06"
               />
             </motion.div>
