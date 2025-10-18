@@ -44,17 +44,17 @@ export default function Home() {
                 <img src={PROFILE} alt="" className='w-90' />
             </motion.div>
 
-            <h1 className='text-white text-2xl sm:text-5xl font-bold mb-2'>
-                SOFTWARE <span></span>
-                <span className='font-light'>
-                    DEVELOPER
+            <h1 className='text-white text-2xl sm:text-5xl font-light mb-4'>
+                SOFT<span className='font-bold'>WARE</span> <span></span>
+                <span className=' '>
+                    DEVE<span className='font-bold'>LOPER</span>
                 </span>
             </h1>
             <h1 className='text-white  text-xl sm:text-2xl mb-1'>
                 KHUTSO MAKUNYANE
             </h1>
 
-            <h2 className='text-white'>
+            {/* <h2 className='text-white'>
                  <Typewriter
                 words={['Software Developer', 'Specializing in Full Stack MERN', 'UX/UI Designer']}
                 loop={false}
@@ -64,8 +64,8 @@ export default function Home() {
                 deleteSpeed={80}
                 delaySpeed={1000}
             />
-                {/* I am a Full-Stack <span className='text-[#028BC5]'>MERN</span> Developer */}
-            </h2>
+              
+            </h2> */}
 
             <BiShapeSquare  className='absolute bottom-2 left-4 text-[#212121] text-7xl animate-spin'/>
         </main>
