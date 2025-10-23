@@ -10,6 +10,7 @@ import QueFiling from "../assets/QueFiling.png";
 import WisePrice from "../assets/WisePrice.png";
 import SmartBiz from "../assets/SmartBiz.png";
 import Vibe from "../assets/Vibe.png";
+import ClipDrop from '../assets/ClipDrop.png';
 
 // ✅ Project Card Component (No TypeScript)
 const ProjectCard = ({ image, title, demoLink, githubLink, category, index, tools = [] }) => {
@@ -154,6 +155,17 @@ export default function Projects() {
                 tools={["React","JavaScript","Tailwing CSS", "Socket.io", "Express","Nodde.js", "MongoDB"]}
                 index="03"
               />
+
+              <ProjectCard
+                image={ClipDrop}
+                title="ClipDrop"
+                demoLink="https://clip-drop.vercel.app/"
+                githubLink="https://github.com/khutso-student?tab=repositories"
+                category="Software"
+                tools={["React","TypeScrip","Tailwing CSS", "Express","Nodde.js", "MongoDB"]}
+                index="04"
+              />
+
               <ProjectCard
                 image={worksync}
                 title="WorkSync"
@@ -161,7 +173,7 @@ export default function Projects() {
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
                 tools={["React","JavaScript", "Express.js", "Socket.io", "Node.js", "Tailwind CSS", "MongoDB"]}
-                index="04"
+                index="05"
               />
               <ProjectCard
                 image={WisePrice}
@@ -170,7 +182,7 @@ export default function Projects() {
                 githubLink="https://github.com/khutso-student?tab=repositories"
                 category="Software"
                 tools={["React","TypeScript", "Supabase", "AI APIs","HTML", "CSS"]}
-                index="05"
+                index="06"
               />
               <ProjectCard
                 image={SmartBiz}
@@ -178,7 +190,7 @@ export default function Projects() {
                 demoLink="https://www.smartbizdigital.co.za/"
                 category="Website Live"
                 tools={["WordPress", "JavaScript", "Elementor","HTML", "CSS"]}
-                index="06"
+                index="07"
               />
             </motion.div>
           )}
