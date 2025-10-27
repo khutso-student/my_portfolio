@@ -7,6 +7,7 @@ import { RiCss3Line } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io";
 import { BiLogoTypescript } from "react-icons/bi";
 import { LiaWordpressSimple } from "react-icons/lia";
+import { DiDjango } from "react-icons/di";
 
 import React from "react";
 import { motion } from "framer-motion";
@@ -84,6 +85,13 @@ export default function Skills() {
               title="Node.js"
               description="Runs JavaScript on the server side for scalability."
             />
+
+             <TechCard
+              icon={DiDjango}
+              title="Django"
+              description="Builds secure and scalable back-end systems with Python."
+            />
+
             <TechCard
               icon={AiOutlineHtml5}
               title="HTML"

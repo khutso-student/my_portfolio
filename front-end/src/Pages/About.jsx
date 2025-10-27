@@ -9,7 +9,7 @@ import { MdOutlineDownloading } from "react-icons/md";
 import { RxDashboard } from "react-icons/rx";
 import { FaGithub, FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 
-import Resume from '../assets/Resume.pdf';
+import Resume from '../assets/CvApplication.pdf';
 
 const Details = ({ dot, label, value }) => {
   return (
@@ -60,7 +60,7 @@ export default function About() {
         {/* left */}
         <div className="flex flex-col w-full sm:w-120 h-auto sm:h-full ">
           <h1 className="text-4xl text-[#535353] mb-1 flex justify-center sm:justify-start">
-            ABOUT <span className="font-bold">ME</span>
+            ABOUT <span> </span> <span className="font-bold ml-2"> ME</span>
           </h1>
 
           <motion.h2
@@ -71,9 +71,9 @@ export default function About() {
           >
             <Typewriter
               words={[
-                "I am a Full-Stack MERN Developer",
+                "I am a Full-Stack Software Developer",
                 "UX/UI Designer",
-                "Software Developer",
+                "I Love Coding",
               ]}
               loop={false}
               cursor
@@ -134,10 +134,12 @@ export default function About() {
         <div className="flex flex-col w-full h-full  p-2">
             
             {[
-            "I'm a dedicated Full-Stack MERN Developer, trained at the PowerLearn Project (PLP) Academy. With 2 years experience, I have mastered the MERN stack — MongoDB, Express.js, React, and Node.js.",
-            "I also bring strong front-end skills in HTML, CSS, JavaScript, TypeScript and a solid grasp of MySQL and basic Python. I actively use Git and GitHub for version control and collaboration.",
-            "Driven by curiosity and purpose, I focus on building efficient, maintainable, and scalable web applications that improve lives and solve problems. I specialize in building robust, user-friendly web applications and turning ideas into scalable digital solutions. With a strong foundation in both front-end and back-end development, I’ve built real-world projects that solve real-world problems. My work, portfolio and the passion can speak for me, let’s build the future, one line of code at a time.",
-            "One of my most impactful projects to date is QueueCare — a smart queue and filing management system designed for healthcare facilities. It streamlines patient flow, reduces waiting times, and digitizes patient records, creating a smoother and more efficient experience for both patients and staff. QueueCare represents my passion for building solutions that directly address real-world challenges. And this is just the beginning — I’m continuously exploring new ideas and committed to building even more innovative projects that make a lasting impact."
+            "I’m a Full-Stack Developer and UX/UI Designer with hands-on experience designing and developing modern, scalable web applications using the MERN stack (MongoDB, Express.js, React, Node.js).",
+            "Trained at the PowerLearn Project (PLP) Academy, I’ve spent the past 2 years mastering both front-end and back-end technologies — building full-stack solutions that are efficient, maintainable, and focused on real-world impact.",
+            "I specialize in crafting user-friendly digital products that bridge clean design and robust functionality. My technical toolkit includes HTML, CSS, JavaScript, TypeScript, React, Node.js, Express, MySQL, MongoDB, and Python(django), alongside design tools like Figma and version control with Git & GitHub.",
+            "One of my proudest achievements is QueueCare, a smart queue and file management system built for healthcare facilities. It streamlines patient flow, digitizes records, and reduces waiting times — improving the experience for both patients and staff.",
+            "I’m passionate about leveraging technology to solve problems, improve lives, and deliver meaningful digital experiences. Whether it’s optimizing a workflow or designing a seamless interface, I approach every challenge with curiosity, creativity, and precision.",
+            "Let’s build the future — one line of code at a time."
             ].map((text, i) => (
             <motion.p
                 key={i}
